@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MyFirstProject.MainPage">
+
+    <StackLayout>
+        
+        <Label Text="Primary Colors" TextColor="DarkSeaGreen" FontSize="Title" >  </Label>
+        <Rectangle HeightRequest ="60" WidthRequest = "120" Fill="Red"></Rectangle>
+        <Rectangle HeightRequest ="60" WidthRequest = "120" Fill="Yellow"></Rectangle>
+        <Rectangle HeightRequest ="60" WidthRequest = "120" Fill="Blue"></Rectangle>
+
+        <Label Text="Secondary Colors" TextColor="DarkSeaGreen" FontSize="Title" ></Label>
+        <Rectangle HeightRequest ="60" WidthRequest = "120" Fill="Green"></Rectangle>
+        <Rectangle HeightRequest ="60" WidthRequest = "120" Fill="Orange"></Rectangle>
+        <Rectangle HeightRequest ="60" WidthRequest = "120" Fill="Purple"></Rectangle>
+    </StackLayout>
+
+</ContentPage>
