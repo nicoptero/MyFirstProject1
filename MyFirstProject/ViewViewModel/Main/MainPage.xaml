@@ -30,6 +30,6 @@
                    Text="Controls" />
 
         </Grid>
-
+    </StackLayout>
 
 </ContentPage>
