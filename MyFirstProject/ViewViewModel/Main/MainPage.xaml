@@ -4,16 +4,32 @@
              x:Class="MyFirstProject.MainPage">
 
     <StackLayout>
-        
-        <Label Text="Primary Colors" TextColor="DarkSeaGreen" FontSize="Title" >  </Label>
-        <Rectangle HeightRequest ="60" WidthRequest = "120" Fill="Red"></Rectangle>
-        <Rectangle HeightRequest ="60" WidthRequest = "120" Fill="Yellow"></Rectangle>
-        <Rectangle HeightRequest ="60" WidthRequest = "120" Fill="Blue"></Rectangle>
+        <Grid Margin="20,35,20,20">
+            <Grid.ColumnDefinitions>
+                <!-- 2 columns - Distributes each column 50%-->
+                <ColumnDefinition Width="0.5*" />
+                <ColumnDefinition Width="0.5*"  />
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <!-- 2 Rows -->
+                <RowDefinition Height="50" />
+                <RowDefinition Height="50"/>
+                <RowDefinition Height="50"/>
+            </Grid.RowDefinitions>
+            <Button Grid.Row="0"
+                   Grid.Column="0"
+                   Text="Layouts" />
+            <Button Grid.Row="0"
+                   Grid.Column="1"
+                   Text="Image" />
+            <Button Grid.Row="1"
+                   Grid.Column="0"
+                   Text="Lists" />
+            <Button Grid.Row="1"
+                   Grid.Column="1"
+                   Text="Controls" />
 
-        <Label Text="Secondary Colors" TextColor="DarkSeaGreen" FontSize="Title" ></Label>
-        <Rectangle HeightRequest ="60" WidthRequest = "120" Fill="Green"></Rectangle>
-        <Rectangle HeightRequest ="60" WidthRequest = "120" Fill="Orange"></Rectangle>
-        <Rectangle HeightRequest ="60" WidthRequest = "120" Fill="Purple"></Rectangle>
-    </StackLayout>
+        </Grid>
+
 
 </ContentPage>
