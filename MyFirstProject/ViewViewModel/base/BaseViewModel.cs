@@ -2,10 +2,11 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Runtime.CompilerServices;
+using System.Windows.Input;
 //using MyFirstProject.Models;
 using Xamarin.Forms;
 
-namespace MyFirstProject.ViewModels
+namespace MyFirstProject.ViewViewModels
 {
     public class BaseViewModel : INotifyPropertyChanged
     {
@@ -47,6 +48,25 @@ namespace MyFirstProject.ViewModels
                 return;
 
             changed.Invoke(this, new PropertyChangedEventArgs(propertyName));
+        }
+
+        private Command onAbsoluteLayoutClicked;
+
+        public ICommand OnAbsoluteLayoutClicked
+        {
+            get
+            {
+                if (onAbsoluteLayoutClicked == null)
+                {
+                    onAbsoluteLayoutClicked = new Command(PerformOnAbsoluteLayoutClicked);
+                }
+
+                return onAbsoluteLayoutClicked;
+            }
+        }
+
+        private void PerformOnAbsoluteLayoutClicked()
+        {
         }
         #endregion
     }

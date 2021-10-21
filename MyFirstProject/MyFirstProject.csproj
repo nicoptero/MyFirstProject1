@@ -16,7 +16,46 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Models\" />
+    <Folder Include="Images\" />
     <Folder Include="ViewViewModel\ActivityIndicatorView\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="ViewViewModel\ListView\ListViewMenuView.xaml.cs">
+      <DependentUpon>ListViewMenuView.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="ViewViewModel\Image\ImagesMenu\Embedded Images\EmbeddedImageView.xaml.cs">
+      <DependentUpon>EmbeddedImageView.xaml</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="ViewViewModel\Controls\ControlsMenuView.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="ViewViewModel\Image\ImageMenuView.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="ViewViewModel\Layouts\AbsoluteLayoutProject\AbsoluteLayoutProjectView.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="ViewViewModel\Layouts\AbsoluteLayout\AbsoluteLayoutView.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="ViewViewModel\Layouts\LayoutsMenu\LayoutMenu.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="ViewViewModel\Layouts\RelativeLayoutProject\RelativeLayoutProjectView.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="ViewViewModel\Layouts\RelativeLayout\RelativeLayoutView.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="ViewViewModel\ListView\ListViewMenuView.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="ViewViewModel\Image\ImagesMenu\Embedded Images\EmbeddedImageView.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
   </ItemGroup>
 </Project>
